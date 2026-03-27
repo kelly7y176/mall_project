@@ -1,0 +1,33 @@
+# --- 忽略大型媒體與原始數據 ---
+# 忽略整個 data 資料夾 (包含影片、圖片、結果)
+data/
+*.MOV
+*.mov
+*.mp4
+*.MP4
+*.HEIC
+*.heic
+*.JPG
+*.jpg
+*.zip
+*.png
+*.PNG
+
+# --- 忽略模型權重與推論引擎 (Jetson 常用) ---
+*.pt
+*.onnx
+*.engine
+*.weights
+
+# --- 忽略報告與資料庫 ---
+*.pdf
+*.db
+.env
+
+# --- 忽略 Python & 開發環境暫存 ---
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+.vscode/
+.DS_Store
