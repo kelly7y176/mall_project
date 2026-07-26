@@ -11,6 +11,8 @@ An advanced, edge-computing traffic monitoring and nightly batch analytics syste
 - **Automated Reporting Pipeline**: Deploys a scheduled execution framework that automatically compiles comprehensive, production-grade PDF analytical reports with actionable design recommendations every morning at 06:00.
 - **Intelligent Web Dashboard**: Features a high-performance Web UI powered by FastAPI to deliver concurrent real-time data streaming and instant analytical report downloads.
 - **Advanced Zone Counting (PoC)**: Integrated Roboflow Supervision to feature custom virtual polygon zones for real-time spatial traffic hotspot tracking & analytics.
+- - **Automated Data Cleansing Pipeline**: Deploys an integrated Python pipeline using Pandas to automatically parse, classify, and restructure unstructured raw edge-AI logs into structured management compliance spreadsheets for retail zoning analysis.
+
 
 ## 🛠️ Tech Stack
 
