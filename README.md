@@ -1,29 +1,40 @@
 # 🏢 Mall-Insight: Edge AI Traffic Analytics System
 
-基於 NVIDIA Jetson Nano 的商場人流即時監控與夜間批次分析系統。
+An advanced, edge-computing traffic monitoring and nightly batch analytics system tailored for retail environments, fully optimized for deployment on NVIDIA Jetson Nano.
 
-## 🌟 核心功能 (Key Features)
-- **Real-time Detection**: 使用 YOLOv11s + TensorRT (FP16) 實現 20+ FPS 偵測。
-- **ByteTrack**: 穩定的多目標追蹤，精準統計 IN/OUT 人流量。
-- **Nightly Batch Processing**: 凌晨自動分析全日錄影，提取停留時長與擁擠數據。
-- **Spatial Analytics**: 生成空間熱圖 (Heatmap) 識別商場擁擠區域。
-- **Automated Reporting**: 每日 06:00 自動生成包含建議的 PDF 專業報表。
-- **Web Dashboard**: 透過 FastAPI 提供即時數據與報表下載介面。
+## 🌟 Key Features
 
-## 🛠️ 技術棧 (Tech Stack)
-- **Hardware**: NVIDIA Jetson Nano, IMX219 CSI Camera.
-- **AI Framework**: Ultralytics YOLOv11, TensorRT.
-- **Backend**: Python, FastAPI, SQLite3.
-- **Reporting**: ReportLab, Matplotlib, Seaborn.
-- **Automation**: Linux Cron Jobs.
+- **Real-time Edge Detection**: Leverages YOLOv11s and TensorRT (FP16 quantized) to achieve highly optimized inference speeds of 20+ FPS on edge hardware.
+- **Multi-Object Tracking**: Integrates the ByteTrack algorithm for stable multi-target correlation, ensuring high-precision metrics for bidirectional (IN/OUT) foot traffic tracking.
+- **Nightly Batch Processing**: Automates post-business hours video processing via background cron jobs to extract critical business intelligence, including customer dwell-time dynamics and congestion patterns.
+- **Spatial Heatmap Analytics**: Generates advanced 2D spatial heatmaps to dynamically visualize and isolate localized high-density congestion hotspots within commercial layouts.
+- **Automated Reporting Pipeline**: Deploys a scheduled execution framework that automatically compiles comprehensive, production-grade PDF analytical reports with actionable design recommendations every morning at 06:00.
+- **Intelligent Web Dashboard**: Features a high-performance Web UI powered by FastAPI to deliver concurrent real-time data streaming and instant analytical report downloads.
+- **Advanced Zone Counting (PoC)**: Integrated Roboflow Supervision to feature custom virtual polygon zones for real-time spatial traffic hotspot tracking & analytics.
 
-## 🚀 快速啟動
-1. 安裝依賴: `pip3 install -r requirements.txt`
-2. 啟動系統: `./start_all.sh`
-3. 訪問 Web UI: `http://<jetson-ip>:8000`
+## 🛠️ Tech Stack
 
-## 📊 數據範例
-系統生成的 PDF 報表包含：
-- 客流量峰值分析
-- 平均停留時間 (Dwell Time)
-- 擁擠警告與消防逃生優化建議
+- **Edge Hardware**: NVIDIA Jetson Nano, IMX219 CSI Camera Module.
+- **AI & Computer Vision**: Ultralytics YOLOv11, NVIDIA TensorRT Execution Framework.
+- **Backend Architecture**: Python, FastAPI Async Framework, SQLite3.
+- **Data Visualization & Reporting**: ReportLab PDF Engine, Matplotlib, Seaborn.
+- **System Automation**: Linux Native Cron Utilities.
+
+## 🚀 Quick Start
+
+1. **Install Dependencies**: 
+   ```bash
+   pip3 install -r requirements.txt
+   ```
+2. **Execute System Deployment**: 
+   ```bash
+   ./start_all.sh
+   ```
+3. **Access Web Interface**: Open your browser and navigate to `http://<jetson-ip>:8000`
+
+## 📊 Analytics & Reporting Samples
+
+The dynamically generated PDF business intelligence reports encompass:
+- Peak traffic hourly distribution and bottleneck identification.
+- Precision metrics for average customer dwell time across target retail zones.
+- Real-time density warning indicators and specialized fire safety routing optimizations.
