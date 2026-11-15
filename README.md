@@ -2,7 +2,7 @@
 
 An advanced, edge-computing traffic monitoring and nightly batch analytics system tailored for retail environments, fully optimized for deployment on NVIDIA Jetson Nano.
 
-<img align="left" align="left" alt="HTML" width="100%" style="padding-right:10px;" src="https://imgur.com/WBGzP4q" />
+<img align="left" align="left" alt="HTML" width="100%" style="padding-right:10 px;" src="https://imgur.com/WBGzP4q" />
 
 
 ## 🌟 Key Features
