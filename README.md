@@ -2,6 +2,9 @@
 
 An advanced, edge-computing traffic monitoring and nightly batch analytics system tailored for retail environments, fully optimized for deployment on NVIDIA Jetson Nano.
 
+<img align="left" align="left" alt="HTML" width="100%" style="padding-right:10px;" src="https://imgur.com/WBGzP4q" />
+
+
 ## 🌟 Key Features
 
 - **Real-time Edge Detection**: Leverages YOLOv11s and TensorRT (FP16 quantized) to achieve highly optimized inference speeds of 20+ FPS on edge hardware.
